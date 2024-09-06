@@ -36,7 +36,7 @@ const Footer = ({ siteInfo }) => {
         <a
           href='https://docs.acnb.cn/about'
           className='underline text-gray-500 dark:text-gray-300'>
-          备忘录📝
+          备忘录
         </a>
       </div>
 
