@@ -209,9 +209,6 @@ nav {
   margin-right: 0.2rem;
 }
 
-/* .webmention-counts .counts > span {
-  margin-right: .8rem;
-} */
 .webmention-counts .counts > span:not(:last-child):after {
   content: ' • ';
 }
@@ -267,8 +264,8 @@ a.avatar-wrapper {
 }
 
 .writing-vertical {
-  writing-mode: vertical-rl; /* 竖向排列从右向左 */
-  text-orientation: upright; /* 文字方向正常 */
+  writing-mode: vertical-rl;
+  text-orientation: upright;
 }
 
 /* Chatbase 在移动端禁止遮挡 */
@@ -287,7 +284,6 @@ img {
   overflow: hidden;
 }
 
-
 .lazy-image-placeholder{
   background: 
       linear-gradient(90deg,#0001 33%,#0005 50%,#0001 66%)
@@ -297,4 +293,11 @@ img {
   }
   @keyframes l1 {
   0% {background-position: right}
+}
+
+/* 隐藏上一篇、下一篇 */
+.prev-next,
+.post-nav,
+.post-navigation {
+  display: none !important;
 }
