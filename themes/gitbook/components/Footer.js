@@ -34,7 +34,7 @@ const Footer = ({ siteInfo }) => {
       <div className='text-xs font-serif'>
         Powered By{' '}
         <a
-          href='https://docs.acnb.cn/about'
+          href='/'
           className='underline text-gray-500 dark:text-gray-300'>
           备忘录
         </a>
