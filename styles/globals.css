@@ -118,7 +118,6 @@ nav {
 
 .medium-zoom-overlay {
   background: none !important;
-  /* background: rgba(0, 0, 0, 0.01) none repeat scroll 0% 0% !important; */
 }
 
 .shadow-text {
@@ -196,7 +195,7 @@ nav {
 .webmention {
   margin-top: 1rem;
   padding-top: 1rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px rgba(0, 0, 0, 0.2);
 }
 
 .webmention-counts {
@@ -290,14 +289,23 @@ img {
       #f2f2f2;
   background-size:300% 100%;
   animation: l1 1s infinite linear;
-  }
-  @keyframes l1 {
+}
+@keyframes l1 {
   0% {background-position: right}
 }
 
-/* 隐藏上一篇、下一篇 */
-.prev-next,
+/* 🔥 绝杀：彻底隐藏上一篇下一篇 */
+.flex.items-center.justify-between.mt-6,
+.pagination,
 .post-nav,
-.post-navigation {
+.prev-next,
+.post-navigation,
+[class*="prev"],
+[class*="next"] {
   display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
